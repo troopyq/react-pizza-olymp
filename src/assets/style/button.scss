@@ -1,0 +1,39 @@
+@import './color';
+
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	font-size: 1.6rem;
+	font-weight: 700;
+	height: 40px;
+	padding: 5px 15px;
+	border-radius: 100px;
+	cursor: pointer;
+	user-select: none;
+	white-space: nowrap;
+
+	transition: all 0.12s;
+}
+
+.button_fill {
+	color: #fff;
+	border: 2px solid $main-color;
+	background-color: $main-color;
+
+	&:hover {
+		color: $main-color;
+		background-color: transparent;
+	}
+}
+.button_outline {
+	color: $main-color;
+	border: 2px solid $main-color;
+	background-color: transparent;
+
+	&:hover {
+		color: #fff;
+		background-color: $main-color;
+	}
+}

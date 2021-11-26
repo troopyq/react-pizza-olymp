@@ -1,0 +1,60 @@
+@import './color';
+
+.form-block {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 450px;
+	padding: 50px 5px 30px;
+}
+.total-text {
+	padding: 5px 25px;
+	font-size: 2.2rem;
+	font-weight: 600;
+}
+.total-price {
+	padding: 0 10px;
+	font-size: 2.8rem;
+	font-weight: 700;
+	color: $main-color;
+	white-space: nowrap;
+}
+.total-old-price {
+	color: rgb(224, 59, 38);
+	text-decoration: line-through;
+	white-space: nowrap;
+}
+.form-cart {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	gap: 15px;
+}
+.discounts {
+	font-size: 1.6rem;
+}
+.devilery-desc {
+	padding-top: 20px;
+}
+
+input {
+	width: 100%;
+	font-size: 1.8rem;
+	height: 40px;
+	padding: 5px 20px;
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	font-family: 'Montserrat', sans-serif;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+@media (max-width: 550px) {
+	.form-block {
+		width: 100%;
+	}
+}
